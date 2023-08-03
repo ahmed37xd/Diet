@@ -1,0 +1,226 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(235, 255, 145);
+}
+#firsttext{
+    text-align: center;
+    color: rgb(37, 154, 37);
+    animation-name: come;
+    animation-duration: 2s;
+    
+}
+#pic{
+    float: left;
+    
+    
+}
+#btndiv{
+    text-align: center;
+    padding: 20px;
+
+}
+#btn{
+    padding: 20px;
+    width: 200px;
+    background-color: rgb(37, 154, 37);
+    color: whitesmoke;
+    border-radius: 20px;
+    
+    
+   
+}
+
+#btn:hover{
+    background-color: lime;
+    color:black;
+}
+
+.content{
+    background-color: whitesmoke;
+}
+
+.popup{
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+    border: 3px solid black;
+    animation-name:up ;
+    animation-duration: 1s;
+    height: 100px;
+    backdrop-filter: blur(72px);
+   
+    
+    
+}
+
+#popup-pic{
+    float: left;
+    height: 100%;
+    
+}
+
+#emailbtn{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(37, 154, 37);
+    color: whitesmoke;
+    border: 2px solid black;
+
+}
+
+#emailbtn:hover{
+    background-color: lime;
+    color:black;
+}
+
+#email{
+    height: 30px;
+    text-align: center;
+}
+
+#name{
+    height: 30px;
+    text-align: center;
+}
+
+#popup-text{
+    color : rgb(37, 154, 37);
+
+}
+
+#email-label{
+    color : rgb(37, 154, 37);;
+}
+
+
+@keyframes come{
+    from{transform: translateX(100%);}
+}
+
+@keyframes grow{
+    from{transform: scale(300%);}
+}
+
+@keyframes fade{
+    100%{box-shadow:0px 0px 30px rgb(0, 0, 0);}
+}
+
+
+#btn:hover{
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+.back{
+    text-align: end;
+}
+#goback{
+    background-color: whitesmoke;
+    border: none;
+    padding: 10px;
+}
+
+.down-text{
+    text-align: center;
+}
+
+#proven-pic{
+    height: 100px;
+}
+
+#p1{
+    font-size: 25px;
+    font-family: "roboto";
+}
+
+#vegan-pic{
+    height: 100px;
+}
+
+
+#p2{
+    font-size: 25px;
+    font-family: "roboto";
+}
+
+#tasty-pic{
+    height: 100px;
+}
+
+.up{
+    text-align: end;
+    
+}
+
+#upbtn{
+    position: fixed;
+}
+
+
+#ups{
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid;
+    justify-content: center;
+    padding: 5px;
+    background-color: none;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+
+
+@keyframes slide {
+    from{transform: translateX(1500%);}
+}
+
+#proven-pic{
+    animation-name: slide;
+    animation-duration: 2s;
+}
+
+#tasty-pic{
+    animation-name: slide;
+    animation-duration: 2s;
+}
+
+#vegan-pic{
+    animation-name: slide;
+    animation-duration: 2s;
+}
+
+.h{
+    animation-name: up;
+    animation-duration: 2s;
+}
+
+#p1{
+    animation-name: slide-left;
+    animation-duration: 2s;
+}
+
+@keyframes up {
+    from{transform: translateY(1500%);}
+}
+
+@keyframes down {
+    from{transform: translateY(-500%);}
+}
+
+
+
+@keyframes slide-left {
+    from{transform: translateX(-1500%);}
+}
+
